@@ -1,7 +1,17 @@
 @charset "utf-8";
+
+
+
+//   백그라운드 컬러!!! 여기에요!!
 html{
-    background-image: linear-gradient(to right top, #10dbf6, #00c7fe, #00b0ff, #0096fb, #6078ea);
+    // 첫 번째 사진 : 왼쪽밑에서 오른쪽위로 점점 어두워짐
+    background-image: linear-gradient(to right top, #bbbbbb, #b4b4b8, #aeacb6, #a7a5b3, #a19eb0);
+
+    // 두 번째 사진 : 오른쪽위에서 왼쪽밑으로 점점 어두워짐
+    // background-image: linear-gradient(to left bottom, #bbbbbb, #b4b4b8, #aeacb6, #a7a5b3, #a19eb0);
 }
+
+
 
 //----------- header -----------//
 header{
@@ -9,7 +19,7 @@ header{
     width: 100%;
     height: 80px;
     display: block;
-    background-color: rgba(255,255,255,0.3);
+    background-color: #545357;
     .container{
         width: 100%;
         display: flex;
@@ -73,7 +83,7 @@ header{
 
 //----------- .bulletin_bord -----------//
 .bulletin_bord{
-    padding-top: 50px;
+    margin-top: 100px;
     .container{
         display: flex;
         align-items: center;
@@ -117,15 +127,13 @@ header{
             font-weight: 500;
         }
         &:nth-of-type(2n+1){
-            // background-color: #efefef;
-            background-color: #d3ecff;
+            background-color: #eee;
         }
         &:nth-of-type(2n+2){
-            // background-color: #fefefe;
-            background-color: #e3f2ff;
+            background-color: #fff;
         }
         &:nth-of-type(1){        
-            background-color: #8eccff;
+            background-color: #545357;
         }
         li{
             display: flex;
@@ -163,11 +171,11 @@ header{
 .number_tab{
     display: flex;
     justify-content: center;
-    margin: 30px 0 50px;
+    margin: 30px 0 80px;
     button{
         background: none;
         font-size: 20px;
-        color: rgba(255,255,255,0.6);
+        color: #545357;
     }
     ul{
         padding: 0 20px;
@@ -176,11 +184,11 @@ header{
         }
     }
     button:hover{
-        color: rgba(255,255,255,1);
+        color: #212024;
     }
     .active_color{
         font-weight: bold;
-        color: rgba(255,255,255,1);
+        color: #212024;
     }
 }
 //===========/ .bulletin_bord ==========//
@@ -188,7 +196,7 @@ header{
 
 //----------- .bord_form -----------//
 .bord_form{
-    padding: 0 0 50px;
+    margin: 0 0 100px;
     .container{
         display: flex;
         flex-direction: column;
@@ -235,7 +243,7 @@ header{
             input,textarea{
                 box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.1);
                 padding: 10px;
-                border: solid 1px #aaaaaa;
+                border: solid 1px #38383b79;
                 border-radius: 4px;
                 -webkit-appearance: none;
                 -moz-appearance: none;
@@ -260,12 +268,12 @@ header{
         border-radius: 3px;
         padding: 5px 10px 3px;
         margin-left: 5px;
-        color: #31a5c8;
+        color: #545357;
         background-color: #fff;
-        border: solid 1px #31a5c8;
+        border: solid 1px #aeacb6;
         &:hover{
             color: #fff;
-            background-color: #31a5c8;
+            background-color: #545357;
             border: solid 1px #fff;
         }
     }
@@ -280,7 +288,7 @@ footer{
     flex-direction: column;
     color: #e1e1e1;
 
-    background-color: rgba(117, 167, 208,0.4);
+    background-color: #38383b;
     .ft_tp_bar{
         position: absolute;
         top: 0;
